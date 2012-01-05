@@ -1,0 +1,89 @@
+# 插件列表
+
+pathogen:
+    desc: 插件管理
+    home: http://www.vim.org/scripts/script.php?script_id=2332
+    repo: https://github.com/tpope/vim-pathogen.git
+
+vimcdoc:
+    desc: 中文文档
+    home: http://vimcdoc.sourceforge.net/
+    repo: https://vimcdoc.svn.sourceforge.net/svnroot/vimcdoc/trunk/
+    type: svn
+
+nerdtree:
+    desc: 文件目录树
+    home: http://www.vim.org/scripts/script.php?script_id=1658
+    repo: https://github.com/scrooloose/nerdtree.git
+
+nerdcommenter:
+    desc: 智能注释
+    home: http://www.vim.org/scripts/script.php?script_id=1218
+    repo: https://github.com/scrooloose/nerdcommenter.git
+
+markdown:
+    desc: markdown 语法高亮
+    home: http://www.vim.org/scripts/script.php?script_id=1242
+    repo: https://github.com/plasticboy/vim-markdown.git
+
+xterm-color-table:
+    desc: 终端颜色表
+    home: http://www.vim.org/scripts/script.php?script_id=3412
+    repo: https://github.com/guns/xterm-color-table.vim.git
+
+indent-object:
+    desc: 缩进文本对象
+    home: http://www.vim.org/scripts/script.php?script_id=3037
+    repo: https://github.com/michaeljsmith/vim-indent-object.git
+
+protobuf:
+    desc: proto 语法高亮
+    home: http://code.google.com/p/protobuf/
+    repo: https://protobuf.googlecode.com/svn/trunk/editors/
+    type: svn
+
+zencoding:
+    desc: html 编辑
+    home: http://www.vim.org/scripts/script.php?script_id=2981
+    repo: https://github.com/mattn/zencoding-vim.git
+
+voom:
+    desc: 文档大纲
+    home: http://www.vim.org/scripts/script.php?script_id=2657
+    repo: https://github.com/vim-scripts/VOoM.git
+
+pyflakes:
+    desc: python 语法检查
+    home: http://www.vim.org/scripts/script.php?script_id=2441
+    repo: https://github.com/kevinw/pyflakes-vim.git
+
+dosini:
+    desc: ini 语法高亮
+    home: http://www.vim.org/scripts/script.php?script_id=3747
+    repo: https://bitbucket.org/xuhdev/syntax-dosini.vim
+    type: hg
+
+ipython:
+    desc: ipython 交互
+    home: http://www.vim.org/scripts/script.php?script_id=3709
+    repo: https://github.com/ivanov/vim-ipython.git
+
+renamer:
+    desc: 文件重命名
+    home: http://www.vim.org/scripts/script.php?script_id=1721
+    repo: https://github.com/vim-scripts/renamer.vim.git
+
+pyref:
+    desc: 在浏览器查看 python 文档
+    home: http://www.vim.org/scripts/script.php?script_id=3104
+    repo: https://github.com/xolox/vim-pyref.git
+
+matchtag:
+    desc: html 当前对应签高亮
+    home: http://www.vim.org/scripts/script.php?script_id=3818
+    repo: https://github.com/gregsexton/MatchTag.git
+
+rails:
+    desc: Rails 开发
+    home: http://www.vim.org/scripts/script.php?script_id=1567
+    repo: https://github.com/tpope/vim-rails.git
