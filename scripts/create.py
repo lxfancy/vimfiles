@@ -3,6 +3,7 @@
 
 import os
 import yaml
+from yaml_ordered_dict import OrderedDictYAMLLoader
 
 header = '''#!/bin/bash
 
@@ -27,7 +28,7 @@ download_filename = 'download.sh'
 
 def main():
     bundle_file = open(bundle_filename);
-    bundle_dict = yaml.load(bundle_file);
+    bundle_dict = yaml.load(bundle_file, OrderedDictYAMLLoader);
 
     commands = []
     for name, info in bundle_dict.iteritems():
@@ -46,14 +47,13 @@ def main():
             repo_command = 'svn checkout %s %s' % (repo_url, repo_name)
         else:
             continue
+
         command = template % (repo_name, name, repo_command)
         commands.append(command)
 
-    download_file = open(download_filename, 'w')
-    download_file.write(header)
-    download_file.write(''.join(commands))
-    download_file.flush
-    download_file.close()
+    with open(download_filename, 'w') as download_file:
+        download_file.write(header)
+        download_file.write(''.join(commands))
 
     os.chmod(download_filename, 33261) # rwxr-xr-x
     print './%s created, double check then run it.' % download_filename
