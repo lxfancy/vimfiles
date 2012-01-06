@@ -1,6 +1,6 @@
-﻿"******************
+﻿" *****************
 " muzuiget 的 vimrc
-"******************
+" *****************
 
 " 初始化 {{{1
 " ======
@@ -222,19 +222,8 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-" 编辑 {{{2
-" ----
-
-" 复制到系统剪贴板
-vnoremap <leader>y <esc>"+y
-vnoremap <leader>Y <esc>"+Y
-
 " 插入 {{{3
 " ~~~~
-
-" 插入系统剪贴板内容
-nnoremap <leader>p <esc>"+p
-nnoremap <leader>P <esc>"+P
 
 " 插入上次删除的单词
 inoremap <a-W> <c-r>w
@@ -346,14 +335,17 @@ endf
 " 自动命令 {{{1
 " ========
 
+" 常规 {{{2
+" ----
+
 " 预览窗口显示在屏幕下方
 autocmd BufWinEnter * call PreviewDown()
 
-" 主窗口大小变化时，vim里的分割窗口也自动调整
-"autocmd VimResized * exe "normal! \<c-w>="
-
 " 禁用视觉响铃
 autocmd GUIEnter * set visualbell t_vb=
+
+" 文件类型 {{{2
+" --------
 
 " vimperatorrc 配置文件高亮
 autocmd BufNewFile,BufRead *vimperatorrc* setfiletype vim
@@ -389,10 +381,21 @@ let g:pyref_mapping = '<leader>k'
 " ----
 
 nnoremap <leader>O :Voom<cr>
-nnoremap <leader>o :Voom
+nnoremap <leader>o :Voom 
 
 " 未整理 {{{1
 " ======
+
+" 复制到系统剪贴板
+"vnoremap <leader>y <esc>"+y
+"vnoremap <leader>Y <esc>"+Y
+
+" 插入系统剪贴板内容
+"nnoremap <leader>p <esc>"+p
+"nnoremap <leader>P <esc>"+P
+
+" 主窗口大小变化时，vim里的分割窗口也自动调整
+"autocmd VimResized * exe "normal! \<c-w>="
 
 " 下划线分隔转驼峰
 "nmap <leader>c viw:s/_\([a-z]\)/\u\1/g<cr>gUl:nohl<cr>
