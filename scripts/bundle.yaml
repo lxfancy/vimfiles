@@ -87,3 +87,8 @@ rails:
     desc: Rails 开发
     home: http://www.vim.org/scripts/script.php?script_id=1567
     repo: https://github.com/tpope/vim-rails.git
+
+tabular:
+    desc: 文本对齐格式化
+    home: http://www.vim.org/scripts/script.php?script_id=3464
+    repo: https://github.com/godlygeek/tabular.git
